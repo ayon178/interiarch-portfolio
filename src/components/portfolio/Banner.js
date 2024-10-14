@@ -4,7 +4,6 @@ import React from 'react'
 import { Box, Typography } from '@mui/material'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import bannerImage from '../../assets/projects/ProjectsBanner.jpg' // Replace with your banner image
 import Image from 'next/image'
 
 const Banner = () => {
@@ -46,7 +45,7 @@ const Banner = () => {
         }}
       >
         <Image
-          src={bannerImage}
+          src={'https://i.ibb.co.com/6BZv1m6/Projects-Banner.jpg'}
           alt="About Banner"
           layout="fill"
           objectFit="cover"

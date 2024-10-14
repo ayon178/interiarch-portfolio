@@ -3,9 +3,7 @@ import PreviousProjects from '../../components/previousProject/PreviousProjects'
 import DesignSection from '../../components/portfolio/DesignSection'
 import Banner from '../../components/portfolio/Banner'
 
-import stackedImage from '../../assets/projects/Living.jpg'
 import kitchen from '../../assets/projects/Kitchen.PNG'
-import dining from '../../assets/projects/Dining.jpg'
 import DesignSection2 from '../../components/portfolio/DesignSection2'
 
 const PreviousProject = () => {
@@ -15,7 +13,7 @@ const PreviousProject = () => {
       <Banner />
       <DesignSection
         heading="Living Space"
-        image={stackedImage}
+        image={'https://i.ibb.co.com/wRZYqb6/Living.jpg'}
         para="View our living space designs."
         imgRight={false}
         uri="living-space"
@@ -40,7 +38,7 @@ const PreviousProject = () => {
       <PreviousProjects />
       <DesignSection2
         heading="Dining room Designs"
-        image={dining}
+        image={'https://i.ibb.co.com/dWh2JFr/Dining.jpg'}
         para="View our living dining room designs."
         imgRight={true}
         uri="dining-room"
