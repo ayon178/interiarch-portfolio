@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Font import */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+/* slick.css */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+/* Add margin to each slide to create a gap */
+.slide-item {
+  padding: 0 10px; /* Adjust the value as needed for the gap */
+  box-sizing: border-box; /* Ensure padding is included in the element's width */
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: Adjust the slide width if necessary */
+.slick-slide > div {
+  width: 100%;
+}
+
+.hover_div {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover_div:hover .overlay {
+  height: 100%; /* Overlay covers the whole image on hover */
+}
+
+.hover_div:hover .overlay-content {
+  opacity: 1; /* Show content on hover */
+}
+
+.hover_div:hover .image-details {
+  opacity: 1; /* Show details on hover */
+}
+.leftAlign {
+  text-align: left;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* .slick-dots li {
+  color: 'white' !important;
+} */
