@@ -13,7 +13,6 @@ import {
 } from '@mui/material'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import testimonialImage from '../assets/TestimonialBG.jpg'
 
 import client from '../assets/client.png'
 
@@ -57,7 +56,7 @@ const ClientTestimonial = () => {
     <Box
       sx={{
         padding: 4,
-        background: `url(${testimonialImage.src})`,
+        background: `url(https://i.ibb.co.com/kgNgMhm/cta-bg.jpg)`,
         borderRadius: 2,
         marginTop: 10,
         marginBottom: 10,

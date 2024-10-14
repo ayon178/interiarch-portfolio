@@ -4,7 +4,6 @@ import DesignSection from '../../components/portfolio/DesignSection'
 import Banner from '../../components/portfolio/Banner'
 
 import stackedImage from '../../assets/projects/Living.jpg'
-import bedroom from '../../assets/projects/Bedroom.jpg'
 import kitchen from '../../assets/projects/Kitchen.PNG'
 import dining from '../../assets/projects/Dining.jpg'
 import DesignSection2 from '../../components/portfolio/DesignSection2'
@@ -25,7 +24,7 @@ const PreviousProject = () => {
       <PreviousProjects />
       <DesignSection2
         heading="Bedroom Designs"
-        image={bedroom}
+        image={'https://i.ibb.co.com/WpcRFkL/Bedroom.jpg'}
         para="View our living bedroom designs."
         imgRight={true}
         uri="bedroom-designs"

@@ -4,7 +4,6 @@ import React from 'react'
 import { Box, Typography } from '@mui/material'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import image from '../../assets/cta_bg.jpg'
 import Image from 'next/image'
 
 const HalfBanner = () => {
@@ -46,7 +45,7 @@ const HalfBanner = () => {
         }}
       >
         <Image
-          src={image}
+          src={'https://i.ibb.co.com/0Dwm3g7/Testimonial-BG.jpg'}
           alt="About Banner"
           layout="fill"
           objectFit="cover"
@@ -70,7 +69,7 @@ const HalfBanner = () => {
       {/* Text Box */}
       <Box
         sx={{
-          zIndex: 2, 
+          zIndex: 2,
           textAlign: 'center',
           color: '#fff',
           padding: 2,
