@@ -62,7 +62,7 @@ const HalfBanner = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.7)', // Adjust opacity as needed
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
           zIndex: 1,
         }}
       />
