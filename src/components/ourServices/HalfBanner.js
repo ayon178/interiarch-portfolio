@@ -70,7 +70,7 @@ const HalfBanner = () => {
       {/* Text Box */}
       <Box
         sx={{
-          zIndex: 2, // Ensure the text is above the overlay
+          zIndex: 2, 
           textAlign: 'center',
           color: '#fff',
           padding: 2,
