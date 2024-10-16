@@ -11,9 +11,6 @@ import {
 } from '@mui/material'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import image1 from 'https://i.ibb.co/9gfq72M/1-2.jpg'
-import image2 from 'https://i.ibb.co/9gfq72M/1-2.jpg'
-import image3 from 'https://i.ibb.co/9gfq72M/1-2.jpg'
 import { COLORS } from '../../constant/constant'
 
 const Description = () => {
@@ -54,7 +51,7 @@ const Description = () => {
             >
               <CardMedia
                 component="img"
-                image={image1.src}
+                image="'https://i.ibb.co/9gfq72M/1-2.jpg'"
                 alt="Dynamic Image 1"
                 sx={{ height: 200, objectFit: 'cover' }}
               />
@@ -83,7 +80,7 @@ const Description = () => {
             >
               <CardMedia
                 component="img"
-                image={image2.src}
+                image="'https://i.ibb.co/9gfq72M/1-2.jpg'"
                 alt="Dynamic Image 2"
                 sx={{ height: 200, objectFit: 'cover' }}
               />
@@ -112,7 +109,7 @@ const Description = () => {
             >
               <CardMedia
                 component="img"
-                image={image3.src}
+                image="'https://i.ibb.co/9gfq72M/1-2.jpg'"
                 alt="Dynamic Image 3"
                 sx={{ height: 200, objectFit: 'cover' }}
               />
