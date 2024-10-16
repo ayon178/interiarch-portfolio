@@ -4,16 +4,12 @@ import React from 'react'
 import { Box, Grid, Typography, Container } from '@mui/material'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import projectImage1 from '../../assets/1.1.jpg'
-import projectImage2 from '../../assets/1.1.jpg'
-import projectImage3 from '../../assets/1.1.jpg'
-import projectImage4 from '../../assets/1.1.jpg'
 
 const projectImages = [
-  { src: projectImage1, alt: 'Project Image 1' },
-  { src: projectImage2, alt: 'Project Image 2' },
-  { src: projectImage3, alt: 'Project Image 3' },
-  { src: projectImage4, alt: 'Project Image 4' },
+  { src: 'https://i.ibb.co/9gfq72M/1-2.jpg', alt: 'Project Image 1' },
+  { src: 'https://i.ibb.co/9gfq72M/1-2.jpg', alt: 'Project Image 2' },
+  { src: 'https://i.ibb.co/9gfq72M/1-2.jpg', alt: 'Project Image 3' },
+  { src: 'https://i.ibb.co/9gfq72M/1-2.jpg', alt: 'Project Image 4' },
 ]
 
 const ProjectImages = () => {

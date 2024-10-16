@@ -3,7 +3,6 @@ import PreviousProjects from '../../components/previousProject/PreviousProjects'
 import DesignSection from '../../components/portfolio/DesignSection'
 import Banner from '../../components/portfolio/Banner'
 
-import kitchen from '../../assets/projects/Kitchen.PNG'
 import DesignSection2 from '../../components/portfolio/DesignSection2'
 
 const PreviousProject = () => {
@@ -30,7 +29,7 @@ const PreviousProject = () => {
       <PreviousProjects />
       <DesignSection
         heading="Kitchen"
-        image={kitchen}
+        image="https://i.ibb.co/N244cMm/Kitchen.png"
         para="View our living kitchen designs."
         imgRight={false}
         uri="kitchen"

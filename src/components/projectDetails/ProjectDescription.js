@@ -4,7 +4,6 @@ import React from 'react'
 import { Box, Typography, Container } from '@mui/material'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import projectImage from '../../assets/1.1.jpg' 
 
 const ProjectDescription = () => {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 })
@@ -80,7 +79,7 @@ const ProjectDescription = () => {
           >
             <Box
               component="img"
-              src={projectImage.src}
+              src="https://i.ibb.co/9gfq72M/1-2.jpg"
               alt="Project"
               sx={{
                 width: '100%',
