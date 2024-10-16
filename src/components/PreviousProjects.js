@@ -12,52 +12,42 @@ import {
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import image1 from '../assets/projects/project_1.png'
-import image2 from '../assets/projects/project_2.jpg'
-import image3 from '../assets/projects/project_3.jpg'
-import image4 from '../assets/projects/project_4.jpg'
-import image5 from '../assets/projects/project_5.png'
-import image6 from '../assets/projects/project_6.jpg'
-import image7 from '../assets/projects/project_7.jpg'
-import image8 from '../assets/projects/project_8.jpg'
-import image9 from '../assets/projects/project_9.jpg'
 
-// Example project data
 const projects = [
   {
-    imageSrc: image1,
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
     link: '/projects/project1',
   },
   {
-    imageSrc: image2,
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
     link: '/projects/project2',
   },
   {
-    imageSrc: image3,
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
     link: '/projects/project3',
   },
   {
-    imageSrc: image4,
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
     link: '/projects/project4',
   },
   {
-    imageSrc: image5,
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
     link: '/projects/project5',
   },
   {
-    imageSrc: image6,
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
     link: '/projects/project6',
   },
   {
-    imageSrc: image7,
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
     link: '/projects/project7',
   },
   {
-    imageSrc: image8,
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
     link: '/projects/project8',
   },
   {
-    imageSrc: image9,
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
     link: '/projects/project9',
   },
 ]

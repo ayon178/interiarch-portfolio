@@ -11,9 +11,9 @@ import {
 } from '@mui/material'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import image1 from '../../assets/1.2.jpg'
-import image2 from '../../assets/1.2.jpg'
-import image3 from '../../assets/1.2.jpg'
+import image1 from 'https://i.ibb.co/9gfq72M/1-2.jpg'
+import image2 from 'https://i.ibb.co/9gfq72M/1-2.jpg'
+import image3 from 'https://i.ibb.co/9gfq72M/1-2.jpg'
 import { COLORS } from '../../constant/constant'
 
 const Description = () => {

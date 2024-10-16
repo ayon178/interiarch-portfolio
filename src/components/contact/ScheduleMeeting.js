@@ -14,7 +14,6 @@ import 'react-datepicker/dist/react-datepicker.css'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import CloseIcon from '@mui/icons-material/Close'
-import image from '../../assets/1.2.jpg'
 
 // Custom DatePicker component
 const CustomDatePicker = ({ selectedDate, onChange, sx }) => {
@@ -85,7 +84,7 @@ const ScheduleMeeting = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundImage: `url(${image.src})`,
+          backgroundImage: `url(https://i.ibb.co/9gfq72M/1-2.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           zIndex: -1,

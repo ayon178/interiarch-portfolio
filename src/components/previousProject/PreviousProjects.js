@@ -7,16 +7,6 @@ import Image from 'next/image'
 import { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close'
 
-// import image1 from '../../assets/projects/project_1.png'
-// import image2 from '../../assets/projects/project_2.jpg'
-// import image3 from '../../assets/projects/project_3.jpg'
-// import image4 from '../../assets/projects/project_4.jpg'
-// import image5 from '../../assets/projects/project_5.png'
-// import image6 from '../../assets/projects/project_6.jpg'
-// import image7 from '../../assets/projects/project_7.jpg'
-// import image8 from '../../assets/projects/project_8.jpg'
-// import image9 from '../../assets/projects/project_9.jpg'
-
 // Example project data
 const projects = [
   {

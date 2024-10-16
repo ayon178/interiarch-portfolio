@@ -3,8 +3,6 @@ import Gallery from '../../components/gallery/Gallery'
 import { Box, Typography } from '@mui/material'
 import Image from 'next/image'
 
-import sampleImage from '../../assets/1.2.jpg'
-
 const GalleryPage = () => {
   return (
     <>
@@ -44,7 +42,7 @@ const GalleryPage = () => {
           }}
         >
           <Image
-            src={sampleImage} // Replace with the actual image source
+            src="https://i.ibb.co/9gfq72M/1-2.jpg"
             alt="Gallery Image"
             layout="responsive"
             width={100} // width and height of the image in percentage

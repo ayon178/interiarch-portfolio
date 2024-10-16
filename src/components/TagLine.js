@@ -1,7 +1,6 @@
 // components/TaglineSection.js
 import { Box, Typography } from '@mui/material'
 import Image from 'next/image'
-import taglineImage from '../assets/tagline.jpg'
 
 export default function Tagline() {
   return (

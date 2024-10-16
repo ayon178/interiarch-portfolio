@@ -37,8 +37,6 @@ import { Home } from '@mui/icons-material'
 import Slide from '@mui/material/Slide' // Import the Slide component from Material-UI
 import useScrollTrigger from '@mui/material/useScrollTrigger' // Import the useScrollTrigger hook
 import CssBaseline from '@mui/material/CssBaseline'
-import myProfilePic from '../assets/l.png'
-import logo from '../assets/l.png'
 import Image from 'next/image'
 import { useState } from 'react'
 import { COLORS } from '../constant/constant'
@@ -117,7 +115,7 @@ function Navbar(props) {
                   className="cursorp Tab8 animate__animated animate__backInLeft"
                 > */}
                 <Image
-                  src={logo}
+                  src="https://i.ibb.co/Ws012wy/l.png"
                   alt="logo"
                   width={150} // Default width for medium devices
                   height={55} // Default height for medium devices

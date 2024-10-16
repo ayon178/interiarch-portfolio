@@ -5,26 +5,23 @@ import Slider from 'react-slick'
 import { Box, Typography, Card, CardContent, CardMedia } from '@mui/material'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import image from '../assets/projects/project_1.png'
-import img2 from '../assets/projects/project_2.jpg'
-import img3 from '../assets/projects/project_7.jpg'
 
 // Example content for sliders
 const slides = [
   {
-    imageSrc: image,
+    imageSrc: "'https://i.ibb.co/Y8kzMR5/project-7.jpg'",
     title: 'Modern Living Room',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel molestias, magnam doloribus repellendus eum accusamus facere nulla iusto maxime culpa.',
   },
   {
-    imageSrc: img2,
+    imageSrc: "'https://i.ibb.co/Y8kzMR5/project-7.jpg'",
     title: 'Classic Bedroom',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel molestias, magnam doloribus repellendus eum accusamus facere nulla iusto maxime culpa.',
   },
   {
-    imageSrc: img3,
+    imageSrc: "'https://i.ibb.co/Y8kzMR5/project-7.jpg'",
     title: 'Sleek Kitchen',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel molestias, magnam doloribus repellendus eum accusamus facere nulla iusto maxime culpa.',
