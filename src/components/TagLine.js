@@ -30,7 +30,7 @@ export default function Tagline() {
           }}
         >
           <Image
-            src={taglineImage.src}
+            src="https://i.ibb.co/zGfvk73/tagline.jpg"
             alt="Chair and plant"
             width={500} // Native image size to maintain quality
             height={200}

@@ -13,7 +13,7 @@ const PreviousProject = () => {
       <Banner />
       <DesignSection
         heading="Living Space"
-        image={'https://i.ibb.co.com/wRZYqb6/Living.jpg'}
+        image={'https://i.ibb.co/wRZYqb6/Living.jpg'}
         para="View our living space designs."
         imgRight={false}
         uri="living-space"
@@ -22,7 +22,7 @@ const PreviousProject = () => {
       <PreviousProjects />
       <DesignSection2
         heading="Bedroom Designs"
-        image={'https://i.ibb.co.com/WpcRFkL/Bedroom.jpg'}
+        image={'https://i.ibb.co/WpcRFkL/Bedroom.jpg'}
         para="View our living bedroom designs."
         imgRight={true}
         uri="bedroom-designs"
@@ -38,7 +38,7 @@ const PreviousProject = () => {
       <PreviousProjects />
       <DesignSection2
         heading="Dining room Designs"
-        image={'https://i.ibb.co.com/dWh2JFr/Dining.jpg'}
+        image={'https://i.ibb.co/dWh2JFr/Dining.jpg'}
         para="View our living dining room designs."
         imgRight={true}
         uri="dining-room"

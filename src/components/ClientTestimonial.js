@@ -8,29 +8,23 @@ import {
   Card,
   CardContent,
   CardMedia,
-  Avatar,
   Divider,
 } from '@mui/material'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
-import client from '../assets/client.png'
-
 // Example testimonial data
 const testimonials = [
   {
-    imageSrc: client,
     name: 'John Doe',
     testimonial: 'This service was fantastic. Highly recommend to anyone!',
   },
   {
-    imageSrc: client,
     name: 'Jane Smith',
     testimonial:
       'A great experience from start to finish. Professional and reliable.',
   },
   {
-    imageSrc: client,
     name: 'Alice Johnson',
     testimonial:
       'Exceeded my expectations in every way. Will definitely use again.',

@@ -24,7 +24,7 @@ const ScheduleMeeting = () => {
         alignItems: 'center',
         justifyContent: 'center',
         padding: 4,
-        backgroundImage: 'url(/assets/cta_bg.jpg)', // Add the image path here
+        backgroundImage: 'url(https://i.ibb.co/Y0dH5zJ/cta-bg.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -96,7 +96,6 @@ const ScheduleMeeting = () => {
         </Button>
       </motion.div>
 
-      {/* Bottom gradient effect (optional) */}
       <Box
         sx={{
           position: 'absolute',

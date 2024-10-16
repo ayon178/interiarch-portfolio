@@ -1,38 +1,30 @@
 'use client'
 
 import React from 'react'
-import { Box, Grid, Typography, IconButton, styled } from '@mui/material'
+import { Box, Grid, Typography, styled } from '@mui/material'
 import { FaArrowRight } from 'react-icons/fa'
 import Image from 'next/image'
-import image1 from '../../assets/projects/project_1.png'
-import image2 from '../../assets/projects/project_2.jpg'
-import image3 from '../../assets/projects/project_3.jpg'
-import image4 from '../../assets/projects/project_4.jpg'
-import image5 from '../../assets/projects/Kitchen.PNG'
-import image6 from '../../assets/projects/project_6.jpg'
-import image7 from '../../assets/projects/project_7.jpg'
-import image8 from '../../assets/projects/project_8.jpg'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
 const images = [
   {
-    src: image1,
+    src: 'https://i.ibb.co/4284z3t/project-3.jpg',
     title: 'Living Room',
     details: 'View our living room designs',
   },
   {
-    src: image3,
+    src: 'https://i.ibb.co/m5xxf3X/Kitchen.png',
     title: 'Dining Room',
     details: 'View our dining space designs',
   },
   {
-    src: image2,
+    src: 'https://i.ibb.co/zbTkKb3/project-1.png',
     title: 'Bedroom',
     details: 'View our bedroom designs',
   },
   {
-    src: image5,
+    src: 'https://i.ibb.co/TLC5bDw/project-2.jpg',
     title: 'Kitchen',
     details: 'View our kitchen designs',
   },

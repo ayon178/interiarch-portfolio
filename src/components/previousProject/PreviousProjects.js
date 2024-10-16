@@ -7,27 +7,54 @@ import Image from 'next/image'
 import { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close'
 
-import image1 from '../../assets/projects/project_1.png'
-import image2 from '../../assets/projects/project_2.jpg'
-import image3 from '../../assets/projects/project_3.jpg'
-import image4 from '../../assets/projects/project_4.jpg'
-import image5 from '../../assets/projects/project_5.png'
-import image6 from '../../assets/projects/project_6.jpg'
-import image7 from '../../assets/projects/project_7.jpg'
-import image8 from '../../assets/projects/project_8.jpg'
-import image9 from '../../assets/projects/project_9.jpg'
+// import image1 from '../../assets/projects/project_1.png'
+// import image2 from '../../assets/projects/project_2.jpg'
+// import image3 from '../../assets/projects/project_3.jpg'
+// import image4 from '../../assets/projects/project_4.jpg'
+// import image5 from '../../assets/projects/project_5.png'
+// import image6 from '../../assets/projects/project_6.jpg'
+// import image7 from '../../assets/projects/project_7.jpg'
+// import image8 from '../../assets/projects/project_8.jpg'
+// import image9 from '../../assets/projects/project_9.jpg'
 
 // Example project data
 const projects = [
-  { imageSrc: image1, link: '/projects/project1' },
-  { imageSrc: image2, link: '/projects/project2' },
-  { imageSrc: image3, link: '/projects/project3' },
-  { imageSrc: image4, link: '/projects/project4' },
-  { imageSrc: image5, link: '/projects/project5' },
-  { imageSrc: image6, link: '/projects/project6' },
-  { imageSrc: image7, link: '/projects/project7' },
-  { imageSrc: image8, link: '/projects/project8' },
-  { imageSrc: image9, link: '/projects/project9' },
+  {
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
+    link: '/projects/project1',
+  },
+  {
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
+    link: '/projects/project2',
+  },
+  {
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
+    link: '/projects/project3',
+  },
+  {
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
+    link: '/projects/project4',
+  },
+  {
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
+    link: '/projects/project5',
+  },
+  {
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
+    link: '/projects/project6',
+  },
+  {
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
+    link: '/projects/project7',
+  },
+  {
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
+    link: '/projects/project8',
+  },
+  {
+    imageSrc: 'https://i.ibb.co/Y8kzMR5/project-7.jpg',
+    link: '/projects/project9',
+  },
 ]
 
 const PreviousProjects = () => {

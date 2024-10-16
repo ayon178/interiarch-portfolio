@@ -17,6 +17,11 @@ const Banner = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   }
 
+  const textBoxVariants = {
+    hidden: { opacity: 0, y: 100 }, // Start from below the screen
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.6 } }, // Slide up and fade in
+  }
+
   return (
     <Box
       sx={{
@@ -45,7 +50,7 @@ const Banner = () => {
         }}
       >
         <Image
-          src={'https://i.ibb.co.com/6BZv1m6/Projects-Banner.jpg'}
+          src={'https://i.ibb.co/6BZv1m6/Projects-Banner.jpg'}
           alt="About Banner"
           layout="fill"
           objectFit="cover"
@@ -67,15 +72,18 @@ const Banner = () => {
         }}
       />
 
-      {/* Text Box */}
-      <Box
-        sx={{
-          zIndex: 2, // Ensure the text is above the overlay
+      {/* Text Box with Animation */}
+      <motion.div
+        variants={textBoxVariants}
+        initial="hidden"
+        animate={inView ? 'visible' : 'hidden'}
+        style={{
+          zIndex: 2,
           textAlign: 'center',
           color: '#fff',
-          padding: 2,
-          borderRadius: 1,
-          mt: 10,
+          padding: '16px',
+          borderRadius: '8px',
+          marginTop: '10px',
         }}
       >
         <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
@@ -84,7 +92,7 @@ const Banner = () => {
         <Typography variant="body1">
           View our projects from all over Bangladesh
         </Typography>
-      </Box>
+      </motion.div>
     </Box>
   )
 }

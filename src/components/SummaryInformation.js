@@ -5,11 +5,10 @@ import { Box, Container, Typography } from '@mui/material'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
-import image from '../assets/about_us_home.png'
 
 // Example dynamic content
 const content = {
-  imageSrc: image, // Updated path assuming image is in public/assets
+  imageSrc: 'https://i.ibb.co/Qpm4LbD/about-us-home.png',
   heading: 'Dynamic Heading',
   paragraph:
     'Welcome to InteriArch, where creativity meets comfort. We aim to transform your spaces into exquisite works of art. A home is a reflection of your unique personality & aspirations, therefore our team is full with skilled designers where they are dedicatedly working to bring your visions to life.',

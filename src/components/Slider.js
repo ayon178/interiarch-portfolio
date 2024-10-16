@@ -6,11 +6,11 @@ import Image from 'next/image'
 import { Box, Typography, Button } from '@mui/material'
 import { styled } from '@mui/system'
 
-import bannerImage1 from '../assets/slider/slider_1.jpg'
-import bannerImage2 from '../assets/slider/slider_2.jpg'
-import bannerImage3 from '../assets/slider/slider_3.jpg'
-
-const images = [bannerImage1, bannerImage2, bannerImage3]
+const images = [
+  'https://i.ibb.co/VYDJgRG/slider-1.jpg',
+  'https://i.ibb.co/C1KT065/slider-2.jpg',
+  'https://i.ibb.co/Chb6gRT/slider-3.jpg',
+]
 
 const SlideImage = styled(Box)(({ theme }) => ({
   position: 'absolute',

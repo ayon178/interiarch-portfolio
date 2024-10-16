@@ -17,6 +17,11 @@ const HalfBanner = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   }
 
+  const textBoxVariants = {
+    hidden: { opacity: 0, y: 100 }, // Start from below the screen
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.6 } }, // Slide up and fade in
+  }
+
   return (
     <Box
       sx={{
@@ -45,7 +50,7 @@ const HalfBanner = () => {
         }}
       >
         <Image
-          src={'https://i.ibb.co.com/0Dwm3g7/Testimonial-BG.jpg'}
+          src={'https://i.ibb.co/0Dwm3g7/Testimonial-BG.jpg'}
           alt="About Banner"
           layout="fill"
           objectFit="cover"
@@ -61,14 +66,17 @@ const HalfBanner = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
           zIndex: 1,
         }}
       />
 
       {/* Text Box */}
-      <Box
-        sx={{
+      <motion.div
+        variants={textBoxVariants}
+        initial="hidden"
+        animate={inView ? 'visible' : 'hidden'}
+        style={{
           zIndex: 2,
           textAlign: 'center',
           color: '#fff',
@@ -80,7 +88,7 @@ const HalfBanner = () => {
         <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
           Our Journey
         </Typography>
-      </Box>
+      </motion.div>
     </Box>
   )
 }
