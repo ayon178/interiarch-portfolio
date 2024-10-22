@@ -1,6 +1,7 @@
 import React from 'react'
 import ServiceList from '../../components/ServiceList'
 import HalfBanner from '../../components/ourServices/HalfBanner'
+import DesignPhilosophy from '../../components/ourServices/DesignPhilosophy'
 
 const RoomStyles = () => {
   return (
@@ -8,6 +9,7 @@ const RoomStyles = () => {
       <HalfBanner />
       {/* <Gallery /> */}
       <ServiceList />
+      <DesignPhilosophy />
       {/* <RoomCategory /> */}
     </>
   )

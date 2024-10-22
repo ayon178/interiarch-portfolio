@@ -9,10 +9,11 @@ import Link from 'next/link'
 
 const images = [
   {
-    src: 'https://i.ibb.co/4284z3t/project-3.jpg',
-    title: 'Dining Room',
-    details: 'View our dining space designs',
+    src: 'https://i.ibb.co/TLC5bDw/project-2.jpg',
+    title: 'Bedroom',
+    details: 'View our bedroom designs',
   },
+
   {
     src: 'https://i.ibb.co/m5xxf3X/Kitchen.png',
     title: 'Kitchen',
@@ -24,10 +25,11 @@ const images = [
     details: 'View our living room designs',
   },
   {
-    src: 'https://i.ibb.co/TLC5bDw/project-2.jpg',
-    title: 'Bedroom',
-    details: 'View our bedroom designs',
+    src: 'https://i.ibb.co/4284z3t/project-3.jpg',
+    title: 'Dining Room',
+    details: 'View our dining space designs',
   },
+
   // {
   //   src: image5,
   //   title: 'Room Style Five',
@@ -89,7 +91,7 @@ const Gallery = () => {
         backgroundPosition: 'bottom',
         objectFit: 'cover',
         py: 10,
-        mt: 10,
+        mt: 1,
       }}
     >
       <Box sx={{ maxWidth: '1000px', mx: 'auto', p: 4 }}>
