@@ -63,6 +63,17 @@ const Footer = () => {
                 Join our newsletter to stay up to date with our latest news and
                 offers.
               </Typography>
+
+              {/* Address */}
+              <Typography variant="body2" gutterBottom>
+                Address: 1234 Example St, Suite 100, City, Country
+              </Typography>
+
+              {/* Phone Number */}
+              <Typography variant="body2" gutterBottom>
+                Phone: (123) 456-7890
+              </Typography>
+
               <Button
                 variant="contained"
                 href="#subscribe"

@@ -86,7 +86,7 @@ const HalfBanner = () => {
         }}
       >
         <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
-          Our Journey
+          Our Services
         </Typography>
       </motion.div>
     </Box>

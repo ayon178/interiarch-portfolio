@@ -5,6 +5,7 @@ import ScheduleMeeting from '../components/ScheduleMeeting'
 import ServiceList from '../components/ServiceList'
 import Gallery from '../components/gallery/Gallery'
 import Tagline from '../components/TagLine'
+import DesignPhilosophy from '../components/DesignPhilosophy'
 
 const page = () => {
   return (
@@ -14,6 +15,7 @@ const page = () => {
       <ServiceList />
       <Tagline />
       <Gallery />
+      <DesignPhilosophy />
 
       <ClientTestimonial />
       <ScheduleMeeting />
