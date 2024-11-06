@@ -27,7 +27,7 @@ const HalfBanner = () => {
       sx={{
         position: 'relative',
         width: '100%',
-        height: '60vh',
+        height: '70vh',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -50,7 +50,7 @@ const HalfBanner = () => {
         }}
       >
         <Image
-          src={'https://i.ibb.co/0Dwm3g7/Testimonial-BG.jpg'}
+          src={'https://i.ibb.co/L6XLHcd/service-halfbanner.jpg'}
           alt="About Banner"
           layout="fill"
           objectFit="cover"
@@ -85,7 +85,15 @@ const HalfBanner = () => {
           mt: 10,
         }}
       >
-        <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
+        <Typography
+          sx={{
+            fontWeight: 'bold',
+            fontSize: {
+              xs: '2rem',
+              md: '4rem',
+            },
+          }}
+        >
           Our Services
         </Typography>
       </motion.div>

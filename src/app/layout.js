@@ -8,10 +8,10 @@ import Footer from '../components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Interia',
+  title: 'Interiarch',
   description: '',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/public/favicon.png',
   },
 }
 

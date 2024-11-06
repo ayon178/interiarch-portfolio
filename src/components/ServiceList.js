@@ -99,9 +99,9 @@ const ServiceList = () => {
                     display: 'flex',
                     justifyContent: 'center',
                     gap: '1rem',
-                    flexWrap: 'nowrap', // Default (no wrapping) for larger screens
-                    [theme.breakpoints.down('md')]: {
-                      flexWrap: 'wrap', // Enable flex-wrap for screens smaller than md
+                    flexWrap: 'wrap', // Allow wrapping for small screens
+                    [theme.breakpoints.up('md')]: {
+                      flexWrap: 'nowrap', // No wrapping on medium and larger screens
                     },
                   }}
                 >
@@ -195,9 +195,9 @@ const ServiceList = () => {
                     justifyContent: 'center', // Align cards to the right
                     gap: '1rem',
                     marginTop: '2rem',
-                    flexWrap: 'nowrap', // Default (no wrapping) for larger screens
-                    [theme.breakpoints.down('md')]: {
-                      flexWrap: 'wrap', // Enable flex-wrap for screens smaller than md
+                    flexWrap: 'wrap', // Allow wrapping for small screens
+                    [theme.breakpoints.up('md')]: {
+                      flexWrap: 'nowrap', // No wrapping on medium and larger screens
                     },
                   }}
                 >
@@ -275,7 +275,7 @@ const cardStyles = {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '185px',
+  width: '165px',
   boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15)', // Increased shadow
   transition: 'box-shadow 0.3s ease',
   '&:hover': {

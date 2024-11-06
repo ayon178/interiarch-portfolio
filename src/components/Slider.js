@@ -7,9 +7,9 @@ import { Box, Typography, Button } from '@mui/material'
 import { styled } from '@mui/system'
 
 const images = [
-  'https://i.ibb.co/VYDJgRG/slider-1.jpg',
+  'https://i.ibb.co/vXT0WGZ/slider1.jpg',
   'https://i.ibb.co/C1KT065/slider-2.jpg',
-  'https://i.ibb.co/Chb6gRT/slider-3.jpg',
+  'https://i.ibb.co/pWjwFGk/slider3.jpg',
 ]
 
 const SlideImage = styled(Box)(({ theme }) => ({
@@ -28,7 +28,7 @@ const ImageContainer = styled(Box)({
   position: 'absolute',
   width: '100%',
   height: '100%',
-  overflow: 'hidden', // This ensures the zoom effect stays within the container
+  overflow: 'hidden',
 })
 
 const ContentContainer = styled(Box)(({ theme }) => ({
@@ -93,6 +93,7 @@ const BannerSlider = () => {
               src={src}
               alt={`Slide ${index}`}
               layout="fill"
+              objectFit="cover"
               className="slide-image"
             />
           </ImageContainer>

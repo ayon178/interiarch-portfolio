@@ -1,3 +1,4 @@
+'use client'
 // Footer.js
 import React from 'react'
 import {
@@ -11,6 +12,8 @@ import {
 } from '@mui/material'
 import { Facebook, Twitter, Instagram, LinkedIn } from '@mui/icons-material'
 import { COLORS } from '../constant/constant'
+import BookingPopup from './popup/BookingPopup'
+import { useState } from 'react'
 
 const Footer = () => {
   return (
@@ -24,63 +27,71 @@ const Footer = () => {
               <Typography variant="h6" gutterBottom>
                 Follow Us
               </Typography>
+
               <IconButton
                 color="inherit"
-                href="https://facebook.com"
+                href="https://www.facebook.com/InteriArchbd"
                 target="_blank"
               >
                 <Facebook />
               </IconButton>
-              <IconButton
+
+              {/* <IconButton
                 color="inherit"
                 href="https://twitter.com"
                 target="_blank"
               >
                 <Twitter />
-              </IconButton>
+              </IconButton> */}
+
               <IconButton
                 color="inherit"
-                href="https://instagram.com"
+                href=" https://www.instagram.com/interiarch.sel/"
                 target="_blank"
               >
                 <Instagram />
               </IconButton>
-              <IconButton
+
+              {/* <IconButton
                 color="inherit"
                 href="https://linkedin.com"
                 target="_blank"
               >
                 <LinkedIn />
-              </IconButton>
+              </IconButton> */}
             </Grid>
 
             {/* CTA Section */}
             <Grid item xs={12} md={4}>
               <Typography variant="h6" gutterBottom>
-                Stay Updated
+                Contact Information
               </Typography>
-              <Typography variant="body2" gutterBottom>
+              {/* <Typography variant="body2" gutterBottom>
                 Join our newsletter to stay up to date with our latest news and
                 offers.
-              </Typography>
+              </Typography> */}
 
               {/* Address */}
               <Typography variant="body2" gutterBottom>
-                Address: 1234 Example St, Suite 100, City, Country
+                Address: SEL Centre, 29 West Panthapath, Dhaka, Bangladesh.
               </Typography>
 
               {/* Phone Number */}
               <Typography variant="body2" gutterBottom>
-                Phone: (123) 456-7890
+                Phone: 02-41020906
+              </Typography>
+              {/* Email */}
+              <Typography variant="body2" gutterBottom>
+                Email: interiarch.sel1983@gmail.com
               </Typography>
 
-              <Button
+              {/* <Button
                 variant="contained"
                 href="#subscribe"
                 sx={{ mt: 2, background: COLORS.primary }}
               >
                 Subscribe
-              </Button>
+              </Button> */}
             </Grid>
 
             {/* Sitemap Section */}
@@ -92,11 +103,14 @@ const Footer = () => {
                 <Link href="/" color="inherit" underline="hover">
                   Home
                 </Link>
-                <Link href="/about" color="inherit" underline="hover">
+                <Link href="/about-us" color="inherit" underline="hover">
                   About Us
                 </Link>
-                <Link href="/services" color="inherit" underline="hover">
-                  Services
+                <Link href="/our-services" color="inherit" underline="hover">
+                  Our Services
+                </Link>
+                <Link href="/portfolio" color="inherit" underline="hover">
+                  Portfolio
                 </Link>
                 <Link href="/contact" color="inherit" underline="hover">
                   Contact

@@ -86,11 +86,16 @@ const Banner = () => {
           marginTop: '10px',
         }}
       >
-        <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
-          Our Projects
-        </Typography>
-        <Typography variant="body1">
-          View our projects from all over Bangladesh
+        <Typography
+          sx={{
+            fontWeight: 'bold',
+            fontSize: {
+              xs: '2rem',
+              md: '4rem',
+            },
+          }}
+        >
+          Our Portfolio
         </Typography>
       </motion.div>
     </Box>

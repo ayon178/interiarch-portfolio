@@ -154,25 +154,25 @@ const InquiryForm = () => {
                     variant="body1"
                     sx={{ mb: 2, color: '#333', lineHeight: 1.5 }}
                   >
-                    1234 Example Street,
+                    Address: SEL Centre, 29 West Panthapath,
                     <br />
-                    City, Country
+                    Dhaka, Bangladesh.
                   </Typography>
                   <Typography
                     variant="body1"
                     sx={{ mb: 2, color: '#333', lineHeight: 1.5 }}
                   >
-                    Phone: +123 456 7890
+                    Phone: 02-41020906
                   </Typography>
                   <Typography
                     variant="body1"
                     sx={{ mb: 2, color: '#333', lineHeight: 1.5 }}
                   >
-                    Email: info@company.com
+                    Email: interiarch.sel1983@gmail.com
                   </Typography>
-                  <Typography variant="body2" color="textSecondary">
+                  {/* <Typography variant="body2" color="textSecondary">
                     Office Hours: Mon-Fri, 9am-5pm
-                  </Typography>
+                  </Typography> */}
                 </CardContent>
               </Card>
             </motion.div>

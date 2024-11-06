@@ -15,7 +15,9 @@ const PreviousProject = () => {
       <Banner />
       <DesignSection
         heading="Living Space"
-        image={'https://i.ibb.co/wRZYqb6/Living.jpg'}
+        image={
+          'https://i.ibb.co/9nhwN8B/Whats-App-Image-2024-11-03-at-13-51-25-1a1dc75e.jpg'
+        }
         para="View our living space designs."
         imgRight={false}
         uri="living-space"
@@ -24,7 +26,9 @@ const PreviousProject = () => {
       <PreviousProjects />
       <DesignSection2
         heading="Bedroom Designs"
-        image={'https://i.ibb.co/WpcRFkL/Bedroom.jpg'}
+        image={
+          'https://i.ibb.co/cwYq7xP/Whats-App-Image-2024-11-03-at-13-51-26-8f79bef0.jpg'
+        }
         para="View our living bedroom designs."
         imgRight={true}
         uri="bedroom-designs"
@@ -32,7 +36,7 @@ const PreviousProject = () => {
       <PreviousProjectsForBedRoomDesigns />
       <DesignSection
         heading="Kitchen"
-        image="https://i.ibb.co/N244cMm/Kitchen.png"
+        image="https://i.ibb.co/74YVqfc/Whats-App-Image-2024-11-03-at-13-51-26-d96bd839.jpg"
         para="View our living kitchen designs."
         imgRight={false}
         uri="kitchen"
@@ -40,7 +44,9 @@ const PreviousProject = () => {
       <PreviousProjectsForKitchen />
       <DesignSection2
         heading="Dining room Designs"
-        image={'https://i.ibb.co/dWh2JFr/Dining.jpg'}
+        image={
+          'https://i.ibb.co/brn8VBc/Whats-App-Image-2024-11-03-at-13-51-26-165e41e9.jpg'
+        }
         para="View our living dining room designs."
         imgRight={true}
         uri="dining-room"

@@ -97,7 +97,7 @@ const PreviousProjects = () => {
   }
 
   return (
-    <Container maxWidth="lg" sx={{ py: 5 }}>
+    <Container maxWidth="lg" sx={{ py: 5,  }}>
       <Box
         ref={ref}
         sx={{

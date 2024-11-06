@@ -35,12 +35,12 @@ const testimonials = [
   },
   {
     image: [
-      'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
+      'https://i.ibb.co.com/YhfQF4w/Dr-Momtaz-Yusuf.png',
       'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
     ],
-    name: 'Alice Johnson',
+    name: 'Dr. Momtaz Yusuf',
     testimonial:
-      'Exceeded my expectations in every way. Will definitely use again.',
+      'Client satisfaction was a big priority from their side that amazed me.',
   },
 ]
 

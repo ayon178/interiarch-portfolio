@@ -55,7 +55,18 @@ const SummaryInformation = () => {
             alt="Summary Image"
             width={400}
             height={420} // Reduced height for better responsiveness
-            style={{ borderRadius: '8px', width: '100%', height: 'auto' }} // Ensure responsive image size
+            style={{
+              borderRadius: '8px',
+              width: {
+                xs: '70%',
+                md: '100%',
+              },
+              height: 'auto',
+              padding: {
+                xs: '0 20px',
+                md: '0',
+              },
+            }} // Ensure responsive image size
           />
         </motion.div>
 
@@ -92,7 +103,7 @@ const SummaryInformation = () => {
                 color: 'text.secondary',
                 lineHeight: 1.6,
                 textAlign: 'center',
-                fontSize: { xs: '0.775rem', sm: '.85rem', md: '1.1rem' }, // Font size adjustments
+                fontSize: { xs: '0.85rem', sm: '.9rem', md: '1.1rem' }, // Font size adjustments
               }}
             >
               Welcome to InteriArch,
@@ -109,7 +120,7 @@ const SummaryInformation = () => {
                 color: 'text.secondary',
                 textAlign: 'center',
                 marginTop: '25px',
-                fontSize: { xs: '0.775rem', sm: '.85rem', md: '1.1rem' }, // Font size adjustments
+                fontSize: { xs: '0.85rem', sm: '.9rem', md: '1.1rem' }, // Font size adjustments
               }}
             >
               As a proud sister concern of SEL and with more than 25 years of

@@ -45,6 +45,7 @@ import { Info } from '@mui/icons-material'
 import { ManageAccounts } from '@mui/icons-material'
 import { Timeline } from '@mui/icons-material'
 import { ContactMail } from '@mui/icons-material'
+import BookingPopup from './popup/BookingPopup'
 function HideOnScroll(props) {
   const { children } = props
   const trigger = useScrollTrigger()
@@ -58,6 +59,7 @@ function HideOnScroll(props) {
 
 function Navbar(props) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+  const [openMeetingPopup, setOpenMeetingPopup] = useState(false)
 
   const handleDrawerOpen = () => {
     setIsDrawerOpen(true)
@@ -134,11 +136,11 @@ function Navbar(props) {
                 <Image
                   src="https://i.ibb.co/Ws012wy/l.png"
                   alt="logo"
-                  width={150} // Default width for medium devices
-                  height={55} // Default height for medium devices
+                  width={140} // Default width for medium devices
+                  height={45} // Default height for medium devices
                   sx={{
-                    width: { xs: '100px', lg: '150px' }, // Responsive width
-                    height: { xs: 'auto', lg: '55px' }, // Responsive height
+                    width: { xs: '100px', lg: '140px' }, // Responsive width
+                    height: { xs: 'auto', lg: '45px' }, // Responsive height
                   }}
                   loading="lazy"
                 />
@@ -213,8 +215,8 @@ function Navbar(props) {
                             alignItems="center"
                             sx={{
                               fontSize: {
-                                xs: '0.8rem',
-                                md: '0.9rem',
+                                xs: '0.7rem',
+                                md: '0.8rem',
                               },
                             }}
                           >
@@ -245,8 +247,8 @@ function Navbar(props) {
                             alignItems="center"
                             sx={{
                               fontSize: {
-                                xs: '0.8rem',
-                                md: '0.9rem',
+                                xs: '0.7rem',
+                                md: '0.8rem',
                               },
                             }}
                           >
@@ -277,8 +279,8 @@ function Navbar(props) {
                             alignItems="center"
                             sx={{
                               fontSize: {
-                                xs: '0.8rem',
-                                md: '0.9rem',
+                                xs: '0.7rem',
+                                md: '0.8rem',
                               },
                             }}
                           >
@@ -310,8 +312,8 @@ function Navbar(props) {
                             alignItems="center"
                             sx={{
                               fontSize: {
-                                xs: '0.8rem',
-                                md: '0.9rem',
+                                xs: '0.7rem',
+                                md: '0.8rem',
                               },
                             }}
                           >
@@ -342,8 +344,8 @@ function Navbar(props) {
                             alignItems="center"
                             sx={{
                               fontSize: {
-                                xs: '0.8rem',
-                                md: '0.9rem',
+                                xs: '0.7rem',
+                                md: '0.8rem',
                               },
                             }}
                           >
@@ -372,6 +374,7 @@ function Navbar(props) {
               <Box sx={{ flexGrow: 0 }}>
                 <>
                   <Button
+                    onClick={() => setOpenMeetingPopup(true)}
                     variant="outlined" // Change to 'outlined' to use border styles
                     sx={{
                       background: 'white',
@@ -380,8 +383,14 @@ function Navbar(props) {
                       borderWidth: '1px',
                       borderRadius: '4px', // Optional: adjust border radius if needed
                       textTransform: 'none', // Prevent uppercase text
-                      padding: '5px 16px', // Optional: adjust padding for better spacing
-                      fontSize: '1rem', // Optional: adjust font size if needed
+                      padding: {
+                        xs: '3px 11px',
+                        md: '5px 16px',
+                      }, // Optional: adjust padding for better spacing
+                      fontSize: {
+                        xs: '.8rem',
+                        md: '1rem',
+                      }, // Optional: adjust font size if needed
                       '&:hover': {
                         borderColor: COLORS.primary,
                         background: 'rgba(255, 255, 255, 0.1)', // Optional: change background on hover
@@ -421,17 +430,26 @@ function Navbar(props) {
                   anchor="left"
                   open={isDrawerOpen}
                   onClose={handleDrawerClose}
+                  sx={{ width: '300px' }}
                 >
-                  <Box sx={{ width: '100%', textAlign: 'center', pt: 1 }}>
+                  <Box
+                    sx={{
+                      // width: '100%',
+                      textAlign: 'left',
+                      pt: 1,
+                      width: '250px',
+                    }}
+                  >
                     <Image
                       src="https://i.ibb.co/Ws012wy/l.png"
                       alt="logo"
-                      width={100} // Default width for medium devices
+                      width={140} // Default width for medium devices
                       height={45} // Default height for medium devices
                       sx={{
-                        width: { xs: '100px', lg: '150px' }, // Responsive width
-                        height: { xs: 'auto', lg: '55px' }, // Responsive height
+                        width: { xs: '100px', lg: '150px' },
+                        height: { xs: 'auto', lg: '55px' },
                       }}
+                      style={{ paddingLeft: '25px' }}
                       loading="lazy"
                     />
                   </Box>
@@ -445,7 +463,10 @@ function Navbar(props) {
                       <ListItemIcon>
                         <Home />
                       </ListItemIcon>
-                      <ListItemText primary={'Home'} />
+                      <ListItemText
+                        primary={'Home'}
+                        sx={{ marginLeft: '-10px' }}
+                      />
                     </ListItemButton>
 
                     <ListItemButton
@@ -457,7 +478,10 @@ function Navbar(props) {
                       <ListItemIcon>
                         <Info />
                       </ListItemIcon>
-                      <ListItemText primary={'About'} />
+                      <ListItemText
+                        primary={'About'}
+                        sx={{ marginLeft: '-10px' }}
+                      />
                     </ListItemButton>
 
                     <ListItemButton
@@ -469,7 +493,10 @@ function Navbar(props) {
                       <ListItemIcon>
                         <ManageAccounts />
                       </ListItemIcon>
-                      <ListItemText primary={'Our Services'} />
+                      <ListItemText
+                        primary={'Our Services'}
+                        sx={{ marginLeft: '-10px' }}
+                      />
                     </ListItemButton>
 
                     <ListItemButton
@@ -481,7 +508,10 @@ function Navbar(props) {
                       <ListItemIcon>
                         <Timeline />
                       </ListItemIcon>
-                      <ListItemText primary={'Portfolio'} />
+                      <ListItemText
+                        primary={'Portfolio'}
+                        sx={{ marginLeft: '-10px' }}
+                      />
                     </ListItemButton>
 
                     <ListItemButton
@@ -493,7 +523,10 @@ function Navbar(props) {
                       <ListItemIcon>
                         <ContactMail />
                       </ListItemIcon>
-                      <ListItemText primary={'Contact'} />
+                      <ListItemText
+                        primary={'Contact'}
+                        sx={{ marginLeft: '-10px' }}
+                      />
                     </ListItemButton>
                   </List>
                 </Drawer>
@@ -502,6 +535,10 @@ function Navbar(props) {
           </Container>
         </AppBar>
       </HideOnScroll>
+
+      {openMeetingPopup && (
+        <BookingPopup open={openMeetingPopup} setOpen={setOpenMeetingPopup} />
+      )}
     </React.Fragment>
   )
 }

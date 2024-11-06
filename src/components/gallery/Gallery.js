@@ -112,10 +112,10 @@ const Gallery = () => {
         <Grid container spacing={2}>
           {/* First Column */}
           <Grid item xs={12} sm={6}>
-            <Link href="/portfolio#kitchen" scroll={true}>
+            <Link href="/portfolio#bedroom-designs" scroll={true}>
               <HoverDiv
                 sx={{ height: { md: '300px', xs: '200px' }, cursor: 'pointer' }}
-                onClick={() => router.push('/portfolio/#living-space')}
+                onClick={() => router.push('/portfolio/#bedroom-designs')}
               >
                 <Image
                   src={images[0].src}
@@ -138,7 +138,7 @@ const Gallery = () => {
               </HoverDiv>
             </Link>
 
-            <Link href="/portfolio#dining-room" scroll={true}>
+            <Link href="/portfolio#kitchen" scroll={true}>
               <HoverDiv sx={{ height: '400px', mt: 4, cursor: 'pointer' }}>
                 <Image
                   src={images[1].src}
@@ -166,7 +166,7 @@ const Gallery = () => {
 
           {/* Second Column */}
           <Grid item xs={12} sm={6}>
-            <Link href="/portfolio#bedroom-designs" scroll={true}>
+            <Link href="/portfolio#living-space" scroll={true}>
               <HoverDiv sx={{ height: '400px', cursor: 'pointer' }}>
                 <Image
                   src={images[2].src}
@@ -191,7 +191,7 @@ const Gallery = () => {
               </HoverDiv>
             </Link>
 
-            <Link href="/portfolio#kitchen" scroll={true}>
+            <Link href="/portfolio#dining-room" scroll={true}>
               <HoverDiv
                 sx={{
                   height: { md: '300px', xs: '200px' },

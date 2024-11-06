@@ -1,16 +1,34 @@
 import { Box, Container, Typography } from '@mui/material'
 import Image from 'next/image'
 
-export default function DesignSection2({ image, heading, para, imgRight, uri }) {
+export default function DesignSection2({
+  image,
+  heading,
+  para,
+  imgRight,
+  uri,
+}) {
   return (
-    <Container maxWidth="lg" id={uri}>
+    <Container
+      maxWidth="lg"
+      id={uri}
+      sx={{
+        my: {
+          xs: '2rem',
+          md: '0',
+        },
+      }}
+    >
       <Box
         sx={{
           display: 'flex',
           flexDirection: { xs: 'column', md: imgRight ? 'row-reverse' : 'row' }, // Column on small devices, row on larger
           alignItems: 'center',
           justifyContent: 'space-between',
-          padding: '2rem',
+          padding: {
+            xs: '8px',
+            md: '2rem',
+          },
         }}
       >
         {/* Text Section */}
@@ -55,57 +73,65 @@ export default function DesignSection2({ image, heading, para, imgRight, uri }) 
             maxWidth: { xs: '100%', md: '500px' }, // Responsive image width
           }}
         >
-          <Box
+          {/* <Box
             sx={{
               width: '100%',
               position: 'relative',
               borderRadius: '8px',
               overflow: 'hidden',
-              height: '600px',
+              height: { xs: '200px', md: '600px' },
               paddingTop: 5,
               paddingLeft: 10,
             }}
-          >
-            {/* Top Image */}
-            <Image
-              src={image}
-              alt="Living Space Design"
-              width={400}
-              height={450}
-              style={{
-                borderRadius: '8px',
-                objectFit: 'cover',
-                zIndex: 14, // Keep the image on top
-                position: 'relative', // Ensure image is relative to parent container
-              }}
-            />
+          > */}
+          {/* Top Image */}
+          <Image
+            src={image}
+            alt="Living Space Design"
+            width={400}
+            height={450}
+            style={{
+              borderRadius: '8px',
+              objectFit: 'cover',
+              zIndex: 14, // Keep the image on top
+              position: 'relative', // Ensure image is relative to parent container
+              width: { xs: '150px', md: '400px' },
+            }}
+          />
 
-            {/* Color Section Below the Image */}
-            <Box
+          {/* Color Section Below the Image */}
+          {/* <Box
               sx={{
                 width: '80%',
                 height: '540px', // Adjust the height of the colored box
                 backgroundColor: '#f0e4d7', // Custom color (can adjust)
                 position: 'absolute',
                 top: '-20px', // Move it below the image
-                right: '3rem', // Adjust the 'left' to shift it to the right for stacking effect
+                right: {
+                  xs: '.2rem',
+                  md: '3rem',
+                }, // Adjust the 'left' to shift it to the right for stacking effect
                 zIndex: 12, // Keep the color box below the image but above the border
               }}
-            />
+            /> */}
 
-            {/* Border Section */}
-            <Box
+          {/* Border Section */}
+          {/* <Box
               sx={{
                 width: '80%',
                 height: '520px', // Height of the bottom bordered box
                 border: '2px solid gray', // Border around the box
                 position: 'absolute',
                 top: '20px', // Position below the color box
-                right: '4rem', // Shift it to the right and down for stacking effect
+
+                right: {
+                  xs: '1rem',
+                  md: '4rem',
+                },
                 zIndex: 10, // Ensure the border stays behind both the image and color box
               }}
-            />
-          </Box>
+            /> */}
+          {/* </Box> */}
         </Box>
       </Box>
     </Container>

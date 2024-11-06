@@ -84,7 +84,15 @@ const ContactInformation = () => {
           mt: 10,
         }}
       >
-        <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
+        <Typography
+          sx={{
+            fontWeight: 'bold',
+            fontSize: {
+              xs: '2rem',
+              md: '4rem',
+            },
+          }}
+        >
           Contact Us
         </Typography>
       </motion.div>

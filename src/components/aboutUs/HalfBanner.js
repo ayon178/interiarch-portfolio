@@ -85,12 +85,20 @@ const HalfBanner = () => {
           mt: 10,
         }}
       >
-        <Typography variant="h2" sx={{ fontWeight: 'bold' }}>
+        <Typography
+          sx={{
+            fontWeight: 'bold',
+            fontSize: {
+              xs: '2rem',
+              md: '4rem',
+            },
+          }}
+        >
           About Us
         </Typography>
-        <Typography variant="body1">
+        {/* <Typography variant="body1">
           InteriArch is delivering blend of interior & architrcture
-        </Typography>
+        </Typography> */}
       </motion.div>
     </Box>
   )

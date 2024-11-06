@@ -13,7 +13,10 @@ export default function DesignSection({ image, heading, para, imgRight, uri }) {
           }, // Column on small devices, row on larger
           alignItems: 'center',
           justifyContent: 'space-between',
-          padding: '2rem',
+          padding: {
+            xs: '8px',
+            md: '2rem',
+          },
         }}
       >
         {/* Text Section */}
@@ -58,16 +61,16 @@ export default function DesignSection({ image, heading, para, imgRight, uri }) {
             maxWidth: { xs: '100%', md: '500px' }, // Responsive image width
           }}
         >
-          <Box
+          {/* <Box
             sx={{
               width: '100%',
               position: 'relative',
               borderRadius: '8px',
               overflow: 'hidden',
-              height: '500px',
+              height: { xs: '200px', md: '500px' },
               paddingTop: 5,
             }}
-          >
+          > */}
             {/* Top Image */}
             <Image
               src={image}
@@ -77,37 +80,38 @@ export default function DesignSection({ image, heading, para, imgRight, uri }) {
               style={{
                 borderRadius: '8px',
                 objectFit: 'cover',
-                zIndex: 14, // Keep the image on top
-                position: 'relative', // Ensure image is relative to parent container
+                zIndex: 14, 
+                position: 'relative', 
+                width: { xs: '200px', md: '400px' },
               }}
             />
 
-            {/* Color Section Below the Image */}
-            <Box
+            
+            {/* <Box
               sx={{
                 width: '80%',
-                height: '390px', // Adjust the height of the colored box
-                backgroundColor: '#f0e4d7', // Custom color (can adjust)
+                height: '390px', 
+                backgroundColor: '#f0e4d7', 
                 position: 'absolute',
-                top: '-20px', // Move it below the image
-                left: '40px', // Adjust the 'left' to shift it to the right for stacking effect
-                zIndex: 12, // Keep the color box below the image but above the border
+                top: '-20px', 
+                left: '40px', 
+                zIndex: 12, 
               }}
-            />
+            /> */}
 
-            {/* Border Section */}
-            <Box
+            
+            {/* <Box
               sx={{
                 width: '80%',
-                height: '370px', // Height of the bottom bordered box
-                border: '2px solid gray', // Border around the box
+                height: '370px', 
+                border: '2px solid gray', 
                 position: 'absolute',
-                top: '20px', // Position below the color box
-                left: '55px', // Shift it to the right and down for stacking effect
-                zIndex: 10, // Ensure the border stays behind both the image and color box
+                top: '20px', 
+                left: '55px', 
+                zIndex: 10, 
               }}
-            />
-          </Box>
+            /> */}
+          {/* </Box> */}
         </Box>
       </Box>
     </Container>

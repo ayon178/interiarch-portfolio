@@ -69,21 +69,21 @@ const AboutSummaryInformation = () => {
             transition={{ duration: 2, type: 'spring' }}
           >
             <Typography
-              variant="h6"
               sx={{
                 color: 'text.secondary',
                 lineHeight: 1.6,
                 textAlign: 'center',
+                fontSize: { xs: '0.7rem', sm: '.85rem', md: '1.1rem' },
               }}
             >
               {content.paragraph}
             </Typography>
             <Typography
-              variant="h6"
               sx={{
                 color: 'text.secondary',
                 textAlign: 'justify',
                 marginTop: '15px',
+                fontSize: { xs: '0.7rem', sm: '.85rem', md: '1.1rem' },
               }}
             >
               As a proud sister concern of SEL and with more than 25 years of
