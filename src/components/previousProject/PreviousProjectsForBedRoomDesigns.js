@@ -103,8 +103,8 @@ const PreviousProjectsForBedRoomDesigns = () => {
         sx={{
           display: 'grid',
           gridTemplateColumns: {
-            xs: '1fr',
-            sm: 'repeat(2, 1fr)',
+            xs: 'repeat(2, 1fr)',
+            // sm: 'repeat(2, 1fr)',
             md: 'repeat(3, 1fr)',
           },
           gap: 4,
