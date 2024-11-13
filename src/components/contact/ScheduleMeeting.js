@@ -14,6 +14,8 @@ import 'react-datepicker/dist/react-datepicker.css'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import CloseIcon from '@mui/icons-material/Close'
+import axios from 'axios'
+import toast from 'react-hot-toast'
 
 // Custom DatePicker component
 const CustomDatePicker = ({ selectedDate, onChange, sx }) => {
@@ -52,20 +54,39 @@ const ScheduleMeeting = () => {
   const handleDateChange = date => setSelectedDate(date)
   const handleDetailsChange = event => setDetails(event.target.value)
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent page reload
+  const handleSubmit = async e => {
+    e.preventDefault() // Prevent page reload
 
     // Construct form data object
     const formData = {
-      date: selectedDate ? selectedDate.toLocaleDateString() : "Not selected",
-      details: details || "No details provided"
-    };
+      date: selectedDate ? selectedDate.toLocaleDateString() : 'Not selected',
+      details: details || 'No details provided',
+    }
 
     // Log the form data to the console
-    console.log('Form Data:', formData);
+    console.log('Form Data:', formData)
+    try {
+      // Make API call to send email
+      const response = await axios.post(
+        'https://email-sender-rouge.vercel.app/api/v1/send-email',
+        {
+          message: `Date: ${formData.date}, Details: ${formData.details}`,
+        }
+      )
 
-    // Close the dialog after submission
-    handleClose();
+      // Log response to ensure email was sent successfully
+      console.log('API Response:', response.data)
+
+      // Show success notification
+      toast.success('Meeting scheduled successfully!')
+
+      // Close the dialog after submission
+      handleClose()
+    } catch (error) {
+      // Show error notification
+      console.error('Error sending email:', error)
+      toast.error('Failed to send the meeting request. Please try again.')
+    }
   }
 
   const ctaVariants = {
