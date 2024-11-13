@@ -94,7 +94,7 @@ const ContactInformation = () => {
           }}
         >
           Contact Us
-        </Typography>
+        </Typography> 
       </motion.div>
     </Box>
   )

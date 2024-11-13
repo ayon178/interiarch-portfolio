@@ -57,3 +57,11 @@
 /* .slick-dots li {
   color: 'white' !important;
 } */
+
+.react-hot-toast > div {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}

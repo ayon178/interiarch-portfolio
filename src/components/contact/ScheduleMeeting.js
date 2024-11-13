@@ -52,11 +52,20 @@ const ScheduleMeeting = () => {
   const handleDateChange = date => setSelectedDate(date)
   const handleDetailsChange = event => setDetails(event.target.value)
 
-  const handleSubmit = () => {
-    // Handle form submission logic
-    console.log('Selected Date:', selectedDate)
-    console.log('Details:', details)
-    handleClose()
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent page reload
+
+    // Construct form data object
+    const formData = {
+      date: selectedDate ? selectedDate.toLocaleDateString() : "Not selected",
+      details: details || "No details provided"
+    };
+
+    // Log the form data to the console
+    console.log('Form Data:', formData);
+
+    // Close the dialog after submission
+    handleClose();
   }
 
   const ctaVariants = {
@@ -181,6 +190,7 @@ const ScheduleMeeting = () => {
             </Typography>
             <Box
               component="form"
+              onSubmit={handleSubmit}
               noValidate
               autoComplete="off"
               sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}
@@ -237,9 +247,9 @@ const ScheduleMeeting = () => {
                 }}
               />
               <Button
+                type="submit"
                 variant="contained"
                 color="primary"
-                onClick={handleSubmit}
                 sx={{ mt: 2, borderRadius: '8px', py: 1.5 }}
               >
                 Submit
