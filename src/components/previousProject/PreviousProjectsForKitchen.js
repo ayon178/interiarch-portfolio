@@ -6,68 +6,40 @@ import { useInView } from 'react-intersection-observer'
 import Image from 'next/image'
 import { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close'
-import Kitchen1 from '../../assets/Interior-Portfolio-Images/Kitchen/01 - Copy.jpg'
-import Kitchen2 from '../../assets/Interior-Portfolio-Images/Kitchen/04.jpg'
-import Kitchen3 from '../../assets/Interior-Portfolio-Images/Kitchen/07 - Copy.jpg'
-import Kitchen4 from '../../assets/Interior-Portfolio-Images/Kitchen/21.jpg'
-import Kitchen5 from '../../assets/Interior-Portfolio-Images/Kitchen/22.jpg'
-import Kitchen6 from '../../assets/Interior-Portfolio-Images/Kitchen/22.png'
-import Kitchen7 from '../../assets/Interior-Portfolio-Images/Kitchen/23.jpg'
-import Kitchen8 from '../../assets/Interior-Portfolio-Images/Kitchen/23.png'
-import Kitchen9 from '../../assets/Interior-Portfolio-Images/Kitchen/2L1A3561-HDR.jpg'
-import Kitchen10 from '../../assets/Interior-Portfolio-Images/Kitchen/2L1A3573-HDR.jpg'
-import Kitchen11 from '../../assets/Interior-Portfolio-Images/Kitchen/_DSC5272-HDR.jpg'
-import Kitchen12 from '../../assets/Interior-Portfolio-Images/Kitchen/_DSC6797-HDR.jpg'
 
-// Example project data
+// Example project data with updated image links
 const projects = [
   {
-    imageSrc: Kitchen1,
+    imageSrc: 'https://i.ibb.co/CP0LNfd/2-L1-A5271-HDR.jpg',
     link: '/projects/project1',
   },
   {
-    imageSrc: Kitchen2,
+    imageSrc: 'https://i.ibb.co/T291n1J/DSC5560-HDR.jpg',
     link: '/projects/project2',
   },
   {
-    imageSrc: Kitchen3,
+    imageSrc: 'https://i.ibb.co/Smp696q/DSC6800-HDR.jpg',
     link: '/projects/project3',
   },
   {
-    imageSrc: Kitchen4,
+    imageSrc: 'https://i.ibb.co/0XHQQst/DSC6809-HDR.jpg',
     link: '/projects/project4',
   },
   {
-    imageSrc: Kitchen5,
+    imageSrc: 'https://i.ibb.co/jymWqjT/Z6A4290.jpg',
     link: '/projects/project5',
   },
   {
-    imageSrc: Kitchen6,
+    imageSrc: 'https://i.ibb.co/QbsPkdX/2-L1-A3629-HDR.jpg',
     link: '/projects/project6',
   },
   {
-    imageSrc: Kitchen7,
+    imageSrc: 'https://i.ibb.co/cJhW971/2-L1-A5267-HDR.jpg',
     link: '/projects/project7',
   },
   {
-    imageSrc: Kitchen8,
+    imageSrc: 'https://i.ibb.co/ctfYsdr/DSC4471-HDR.jpg',
     link: '/projects/project8',
-  },
-  {
-    imageSrc: Kitchen9,
-    link: '/projects/project9',
-  },
-  {
-    imageSrc: Kitchen10,
-    link: '/projects/project10',
-  },
-  {
-    imageSrc: Kitchen11,
-    link: '/projects/project11',
-  },
-  {
-    imageSrc: Kitchen12,
-    link: '/projects/project12',
   },
 ]
 
@@ -104,7 +76,6 @@ const PreviousProjectsForKitchen = () => {
           display: 'grid',
           gridTemplateColumns: {
             xs: 'repeat(2, 1fr)',
-            // sm: 'repeat(2, 1fr)',
             md: 'repeat(3, 1fr)',
           },
           gap: 4,
@@ -113,7 +84,6 @@ const PreviousProjectsForKitchen = () => {
         {projects.map((project, index) => (
           <a
             key={index}
-            // href={project.link}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -131,7 +101,7 @@ const PreviousProjectsForKitchen = () => {
                 borderRadius: '12px',
                 position: 'relative',
                 width: '100%',
-                height: '200px', // Consistent container height
+                height: '200px',
               }}
             >
               <motion.div
@@ -139,12 +109,12 @@ const PreviousProjectsForKitchen = () => {
                   width: '100%',
                   height: '100%',
                 }}
-                whileHover={{ scale: 1.1 }} // Only the image zooms in
+                whileHover={{ scale: 1.1 }}
               >
                 <Image
                   src={project.imageSrc}
                   alt={`Project ${index + 1}`}
-                  layout="fill" // Ensures the image fills the container
+                  layout="fill"
                   objectFit="cover"
                   style={{
                     borderRadius: '12px',
@@ -182,11 +152,10 @@ const PreviousProjectsForKitchen = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            // Responsive width for small and medium devices
             width: {
-              xs: '100%', // For small devices
-              sm: '100%', // For small devices
-              md: '60%', // For medium devices
+              xs: '100%',
+              sm: '100%',
+              md: '60%',
             },
           }}
         >
@@ -202,11 +171,10 @@ const PreviousProjectsForKitchen = () => {
             <CloseIcon />
           </IconButton>
 
-          {/* Responsive Image inside the Lightbox */}
           <Box
             sx={{
               width: '100%',
-              maxHeight: '80vh', // To ensure the image doesn't overflow the modal
+              maxHeight: '80vh',
               position: 'relative',
               display: 'flex',
               justifyContent: 'center',
@@ -215,7 +183,7 @@ const PreviousProjectsForKitchen = () => {
             <Image
               src={selectedImage}
               alt="Lightbox Image"
-              layout="responsive" // Responsive layout
+              layout="responsive"
               width={800}
               height={600}
               objectFit="contain"

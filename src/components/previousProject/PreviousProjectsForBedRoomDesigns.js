@@ -6,68 +6,60 @@ import { useInView } from 'react-intersection-observer'
 import Image from 'next/image'
 import { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close'
-import BedRoomDesigns1 from '../../assets/Interior-Portfolio-Images/Bedroom/01.jpg'
-import BedRoomDesigns2 from '../../assets/Interior-Portfolio-Images/Bedroom/07.jpg'
-import BedRoomDesigns3 from '../../assets/Interior-Portfolio-Images/Bedroom/13.jpg'
-import BedRoomDesigns4 from '../../assets/Interior-Portfolio-Images/Bedroom/14..jpg'
-import BedRoomDesigns5 from '../../assets/Interior-Portfolio-Images/Bedroom/15.jpg'
-import BedRoomDesigns6 from '../../assets/Interior-Portfolio-Images/Bedroom/26_2ND Bed.png'
-import BedRoomDesigns7 from '../../assets/Interior-Portfolio-Images/Bedroom/28.png'
-import BedRoomDesigns8 from '../../assets/Interior-Portfolio-Images/Bedroom/32.png'
-import BedRoomDesigns9 from '../../assets/Interior-Portfolio-Images/Bedroom/33.jpg'
-import BedRoomDesigns10 from '../../assets/Interior-Portfolio-Images/Bedroom/39.jpg'
-import BedRoomDesigns11 from '../../assets/Interior-Portfolio-Images/Bedroom/5.jpg'
-import BedRoomDesigns12 from '../../assets/Interior-Portfolio-Images/Bedroom/8.jpg'
 
-// Example project data
+// Example project data with updated image links
 const projects = [
   {
-    imageSrc: BedRoomDesigns1,
+    imageSrc: 'https://i.ibb.co/7jxyRY8/DSC4480-HDR-2.jpg',
     link: '/projects/project1',
   },
   {
-    imageSrc: BedRoomDesigns2,
+    imageSrc: 'https://i.ibb.co/TmqBGmC/DSC4546-HDR.jpg',
     link: '/projects/project2',
   },
   {
-    imageSrc: BedRoomDesigns3,
+    imageSrc: 'https://i.ibb.co/7tzv0MQ/DSC4543-HDR.jpg',
     link: '/projects/project3',
   },
   {
-    imageSrc: BedRoomDesigns4,
+    imageSrc: 'https://i.ibb.co/PgJRP1H/DSC4582-HDR.jpg',
     link: '/projects/project4',
   },
   {
-    imageSrc: BedRoomDesigns5,
+    imageSrc: 'https://i.ibb.co/VQfJRtQ/DSC4615-HDR.jpg',
     link: '/projects/project5',
   },
   {
-    imageSrc: BedRoomDesigns6,
+    imageSrc: 'https://i.ibb.co/6yC8q0h/DSC5203-HDR.jpg',
     link: '/projects/project6',
   },
   {
-    imageSrc: BedRoomDesigns7,
+    imageSrc: 'https://i.ibb.co/Vj1kKnf/DSC5212-HDR.jpg',
     link: '/projects/project7',
   },
   {
-    imageSrc: BedRoomDesigns8,
+    imageSrc: 'https://i.ibb.co/3NqxL82/DSC5299-HDR.jpg',
     link: '/projects/project8',
   },
   {
-    imageSrc: BedRoomDesigns9,
+    imageSrc: 'https://i.ibb.co/m4TPBmT/DSC6623-HDR.jpg',
     link: '/projects/project9',
   },
   {
-    imageSrc: BedRoomDesigns10,
+    imageSrc: 'https://i.ibb.co/znKzkfg/DSC6638-HDR.jpg',
     link: '/projects/project10',
   },
   {
-    imageSrc: BedRoomDesigns11,
+    imageSrc: 'https://i.ibb.co/5x07pT6/DSC6776-HDR.jpg',
     link: '/projects/project11',
   },
   {
-    imageSrc: BedRoomDesigns12,
+    imageSrc: 'https://i.ibb.co/y8tfZky/2-L1-A2856-HDR.jpg',
     link: '/projects/project12',
+  },
+  {
+    imageSrc: 'https://i.ibb.co/09D6zCT/2-L1-A2904-HDR.jpg',
+    link: '/projects/project13',
   },
 ]
 
@@ -104,7 +96,6 @@ const PreviousProjectsForBedRoomDesigns = () => {
           display: 'grid',
           gridTemplateColumns: {
             xs: 'repeat(2, 1fr)',
-            // sm: 'repeat(2, 1fr)',
             md: 'repeat(3, 1fr)',
           },
           gap: 4,
@@ -113,7 +104,6 @@ const PreviousProjectsForBedRoomDesigns = () => {
         {projects.map((project, index) => (
           <a
             key={index}
-            // href={project.link}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -172,7 +162,6 @@ const PreviousProjectsForBedRoomDesigns = () => {
         <Box
           sx={{
             position: 'relative',
-            width: '100%',
             maxWidth: '90vw',
             maxHeight: '90vh',
             backgroundColor: 'white',
@@ -182,12 +171,6 @@ const PreviousProjectsForBedRoomDesigns = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            // Responsive width for small and medium devices
-            width: {
-              xs: '100%', // For small devices
-              sm: '100%', // For small devices
-              md: '60%', // For medium devices
-            },
           }}
         >
           <IconButton
@@ -201,12 +184,10 @@ const PreviousProjectsForBedRoomDesigns = () => {
           >
             <CloseIcon />
           </IconButton>
-
-          {/* Responsive Image inside the Lightbox */}
           <Box
             sx={{
               width: '100%',
-              maxHeight: '80vh', // To ensure the image doesn't overflow the modal
+              maxHeight: '80vh',
               position: 'relative',
               display: 'flex',
               justifyContent: 'center',
@@ -215,7 +196,7 @@ const PreviousProjectsForBedRoomDesigns = () => {
             <Image
               src={selectedImage}
               alt="Lightbox Image"
-              layout="responsive" // Responsive layout
+              layout="responsive"
               width={800}
               height={600}
               objectFit="contain"

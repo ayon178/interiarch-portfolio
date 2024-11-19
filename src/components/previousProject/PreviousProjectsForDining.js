@@ -6,53 +6,40 @@ import { useInView } from 'react-intersection-observer'
 import Image from 'next/image'
 import { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close'
-import Dining1 from '../../assets/Interior-Portfolio-Images/Dining/15_Dining Room.png'
-import Dining2 from '../../assets/Interior-Portfolio-Images/Dining/21.jpg'
-import Dining3 from '../../assets/Interior-Portfolio-Images/Dining/26.jpg'
-import Dining4 from '../../assets/Interior-Portfolio-Images/Dining/3.jpg'
-import Dining5 from '../../assets/Interior-Portfolio-Images/Dining/8_Dining Room.png'
-import Dining6 from '../../assets/Interior-Portfolio-Images/Dining/_DSC4651-HDR.jpg'
-import Dining7 from '../../assets/Interior-Portfolio-Images/Dining/D5_Image_20230919_113107.png'
-import Dining8 from '../../assets/Interior-Portfolio-Images/Dining/D5_Image_20231022_121409.png'
-import Dining9 from '../../assets/Interior-Portfolio-Images/Dining/DINING ROOM 1.3.jpg'
 
-// Example project data
+// Updated project data with new image links
 const projects = [
   {
-    imageSrc: Dining1,
+    imageSrc: 'https://i.ibb.co/LZ3DZjc/DSC4639-HDR.jpg',
     link: '/projects/project1',
   },
   {
-    imageSrc: Dining2,
+    imageSrc: 'https://i.ibb.co/1ddywb5/DSC4648-HDR.jpg',
     link: '/projects/project2',
   },
   {
-    imageSrc: Dining3,
+    imageSrc: 'https://i.ibb.co/y8GGHM9/DSC5497-HDR.jpg',
     link: '/projects/project3',
   },
   {
-    imageSrc: Dining4,
+    imageSrc: 'https://i.ibb.co/y6m35Y0/DSC5575-HDR.jpg',
     link: '/projects/project4',
   },
   {
-    imageSrc: Dining5,
+    imageSrc: 'https://i.ibb.co/mGk7mVq/DSC5578-HDR.jpg',
     link: '/projects/project5',
   },
   {
-    imageSrc: Dining6,
+    imageSrc: 'https://i.ibb.co/dkcv6g2/DSC6695-HDR.jpg',
     link: '/projects/project6',
   },
   {
-    imageSrc: Dining7,
+    imageSrc: 'https://i.ibb.co/MfTpMtc/2-L1-A2680-HDR.jpg',
     link: '/projects/project7',
   },
   {
-    imageSrc: Dining8,
+    imageSrc: 'https://i.ibb.co/sV8QsXq/2-L1-A2710-HDR.jpg',
     link: '/projects/project8',
-  },
-  {
-    imageSrc: Dining9,
-    link: '/projects/project9',
   },
 ]
 
@@ -89,7 +76,6 @@ const PreviousProjectsForDining = () => {
           display: 'grid',
           gridTemplateColumns: {
             xs: 'repeat(2, 1fr)',
-            // sm: 'repeat(2, 1fr)',
             md: 'repeat(3, 1fr)',
           },
           gap: 4,
@@ -98,7 +84,6 @@ const PreviousProjectsForDining = () => {
         {projects.map((project, index) => (
           <a
             key={index}
-            // href={project.link}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -116,7 +101,7 @@ const PreviousProjectsForDining = () => {
                 borderRadius: '12px',
                 position: 'relative',
                 width: '100%',
-                height: '200px', // Consistent container height
+                height: '200px',
               }}
             >
               <motion.div
@@ -124,12 +109,12 @@ const PreviousProjectsForDining = () => {
                   width: '100%',
                   height: '100%',
                 }}
-                whileHover={{ scale: 1.1 }} // Only the image zooms in
+                whileHover={{ scale: 1.1 }}
               >
                 <Image
                   src={project.imageSrc}
                   alt={`Project ${index + 1}`}
-                  layout="fill" // Ensures the image fills the container
+                  layout="fill"
                   objectFit="cover"
                   style={{
                     borderRadius: '12px',
@@ -167,11 +152,10 @@ const PreviousProjectsForDining = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            // Responsive width for small and medium devices
             width: {
-              xs: '100%', // For small devices
-              sm: '100%', // For small devices
-              md: '60%', // For medium devices
+              xs: '100%',
+              sm: '100%',
+              md: '60%',
             },
           }}
         >
@@ -191,7 +175,7 @@ const PreviousProjectsForDining = () => {
           <Box
             sx={{
               width: '100%',
-              maxHeight: '80vh', // To ensure the image doesn't overflow the modal
+              maxHeight: '80vh',
               position: 'relative',
               display: 'flex',
               justifyContent: 'center',
@@ -200,7 +184,7 @@ const PreviousProjectsForDining = () => {
             <Image
               src={selectedImage}
               alt="Lightbox Image"
-              layout="responsive" // Responsive layout
+              layout="responsive"
               width={800}
               height={600}
               objectFit="contain"

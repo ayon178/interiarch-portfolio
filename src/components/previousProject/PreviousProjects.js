@@ -6,67 +6,55 @@ import { useInView } from 'react-intersection-observer'
 import Image from 'next/image'
 import { useState } from 'react'
 import CloseIcon from '@mui/icons-material/Close'
-import LivingSpace1 from '../../assets/Interior-Portfolio-Images/Living-room/1.png'
-import LivingSpace2 from '../../assets/Interior-Portfolio-Images/Living-room/13.jpeg'
-import LivingSpace3 from '../../assets/Interior-Portfolio-Images/Living-room/14.......jpg'
-import LivingSpace4 from '../../assets/Interior-Portfolio-Images/Living-room/1_Living Room.png'
-import LivingSpace5 from '../../assets/Interior-Portfolio-Images/Living-room/2_Living Room (TV Wall).png'
-import LivingSpace6 from '../../assets/Interior-Portfolio-Images/Living-room/5_Living Room.png'
-import LivingSpace7 from '../../assets/Interior-Portfolio-Images/Living-room/8.jpg'
-import LivingSpace8 from '../../assets/Interior-Portfolio-Images/Living-room/895c7203-cbcc-425f-8fff-f9aee3c9a56f.jpg'
-import LivingSpace9 from '../../assets/Interior-Portfolio-Images/Living-room/_DSC4684-HDR.jpg'
-import LivingSpace10 from '../../assets/Interior-Portfolio-Images/Living-room/_DSC5491-HDR.jpg'
-import LivingSpace11 from '../../assets/Interior-Portfolio-Images/Living-room/_DSC6889-HDR.jpg'
-import LivingSpace12 from '../../assets/Interior-Portfolio-Images/Living-room/ex 3.jpg'
 
-// Example project data
+// Updated project data with new image URLs
 const projects = [
   {
-    imageSrc: LivingSpace1,
+    imageSrc: 'https://i.ibb.co/JsCcV8G/2-L1-A2604-HDR.jpg',
     link: '/projects/project1',
   },
   {
-    imageSrc: LivingSpace2,
+    imageSrc: 'https://i.ibb.co/P4rWFbZ/DSC6973-HDR.jpg',
     link: '/projects/project2',
   },
   {
-    imageSrc: LivingSpace3,
+    imageSrc: 'https://i.ibb.co/sqwzKrG/DSC6967-HDR.jpg',
     link: '/projects/project3',
   },
   {
-    imageSrc: LivingSpace4,
+    imageSrc: 'https://i.ibb.co/H209H1z/DSC6895-HDR.jpg',
     link: '/projects/project4',
   },
   {
-    imageSrc: LivingSpace5,
+    imageSrc: 'https://i.ibb.co/h1wxYNV/DSC6665-HDR.jpg',
     link: '/projects/project5',
   },
   {
-    imageSrc: LivingSpace6,
+    imageSrc: 'https://i.ibb.co/6Bzk2Xn/DSC5539-HDR.jpg',
     link: '/projects/project6',
   },
   {
-    imageSrc: LivingSpace7,
+    imageSrc: 'https://i.ibb.co/j8T1HxK/DSC5527-HDR.jpg',
     link: '/projects/project7',
   },
   {
-    imageSrc: LivingSpace8,
+    imageSrc: 'https://i.ibb.co/grjz6Zd/DSC5506-HDR.jpg',
     link: '/projects/project8',
   },
   {
-    imageSrc: LivingSpace9,
+    imageSrc: 'https://i.ibb.co/XD8t0T6/DSC4720-HDR.jpg',
     link: '/projects/project9',
   },
   {
-    imageSrc: LivingSpace10,
+    imageSrc: 'https://i.ibb.co/MG6HCd5/DSC6970-HDR.jpg',
     link: '/projects/project10',
   },
   {
-    imageSrc: LivingSpace11,
+    imageSrc: 'https://i.ibb.co/K59JtSx/DSC4690-HDR.jpg',
     link: '/projects/project11',
   },
   {
-    imageSrc: LivingSpace12,
+    imageSrc: 'https://i.ibb.co/SPSQHCj/DSC4726-HDR.jpg',
     link: '/projects/project12',
   },
 ]
@@ -104,7 +92,6 @@ const PreviousProjects = () => {
           display: 'grid',
           gridTemplateColumns: {
             xs: 'repeat(2, 1fr)',
-            // sm: 'repeat(2, 1fr)',
             md: 'repeat(3, 1fr)',
           },
           gap: 4,
@@ -113,7 +100,6 @@ const PreviousProjects = () => {
         {projects.map((project, index) => (
           <a
             key={index}
-            // href={project.link}
             style={{
               display: 'block',
               overflow: 'hidden',
@@ -131,7 +117,7 @@ const PreviousProjects = () => {
                 borderRadius: '12px',
                 position: 'relative',
                 width: '100%',
-                height: '200px', // Consistent container height
+                height: '200px',
               }}
             >
               <motion.div
@@ -139,12 +125,12 @@ const PreviousProjects = () => {
                   width: '100%',
                   height: '100%',
                 }}
-                whileHover={{ scale: 1.1 }} // Only the image zooms in
+                whileHover={{ scale: 1.1 }}
               >
                 <Image
                   src={project.imageSrc}
                   alt={`Project ${index + 1}`}
-                  layout="fill" // Ensures the image fills the container
+                  layout="fill"
                   objectFit="cover"
                   style={{
                     borderRadius: '12px',
@@ -182,12 +168,6 @@ const PreviousProjects = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            // Responsive width for small and medium devices
-            width: {
-              xs: '100%', // For small devices
-              sm: '100%', // For small devices
-              md: '60%', // For medium devices
-            },
           }}
         >
           <IconButton
@@ -202,11 +182,10 @@ const PreviousProjects = () => {
             <CloseIcon />
           </IconButton>
 
-          {/* Responsive Image inside the Lightbox */}
           <Box
             sx={{
               width: '100%',
-              maxHeight: '80vh', // To ensure the image doesn't overflow the modal
+              maxHeight: '80vh',
               position: 'relative',
               display: 'flex',
               justifyContent: 'center',
@@ -215,7 +194,7 @@ const PreviousProjects = () => {
             <Image
               src={selectedImage}
               alt="Lightbox Image"
-              layout="responsive" // Responsive layout
+              layout="responsive"
               width={800}
               height={600}
               objectFit="contain"
