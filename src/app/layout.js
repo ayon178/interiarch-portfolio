@@ -13,7 +13,7 @@ export const metadata = {
   title: 'Interiarch',
   description: '',
   icons: {
-    icon: '/public/favicon.png',
+    icon: './favicon.ico',
   },
 }
 
